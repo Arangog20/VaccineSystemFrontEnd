@@ -1,0 +1,52 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+     display: flex;          
+     max-width: 100vw;           
+     height: 100vh;  
+
+  }
+  
+  .sidebar {
+    width: 280px; 
+    background-color: #00274d;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  .sidebar li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .sidebar a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    width: 100%;
+    background-color:#F61B3F;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .content {      
+    width: calc(100% - 250px) !important;
+    overflow: hidden;        /* Habilitar scroll vertical si el contenido excede la altura */
+  }

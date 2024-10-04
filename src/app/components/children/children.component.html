@@ -1,0 +1,67 @@
+<div class="container">
+
+    <div class="onhealth-container">
+      <p class="onhealth-title"><span class="highlight">ON</span>HEALTH</p>
+    
+      <div class="form-container">
+    
+       
+        <div class="form-box">
+          <h2>Crear niño</h2>
+
+          <form (ngSubmit)="sendDatachild()">
+            <label for="name">a. Nombre de niño</label>
+            <input type="text" id="name"
+            name="name" [(ngModel)]="name" placeholder="raúl" />
+    
+            <label for="municipalityId">b. Municipio</label>
+            <input type="number" id="municipalityId" 
+             name="municipalityId" [(ngModel)]="municipalityId" placeholder="2" />
+    
+            <label for="birthday">c. Fecha de nacimiento</label>
+            <input type="date" id="birthday" 
+             name="birthday" [(ngModel)]="birthday" placeholder="2019-02-25" />
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    
+        <div class="form-box">
+          <h2>Editar Niño</h2>
+          <form >
+            <label for="_id">Id del niño</label>
+            <input type="number" id="id" 
+            name="childId" placeholder="1" />
+    
+            <label for="name">a. Nombre </label>
+            <input type="text" id="edit-child-name"
+             name="childEditName" placeholder="raúl" />
+    
+            <label for="type">b. Municipio</label>
+            <input type="text" id="type" 
+             name="childEditType" placeholder="itagui" />
+    
+            <label for="age">c. Fecha</label>
+            <input type="number" id="age"
+             name="childEditAge" placeholder="2019-02-19" />
+    
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        
+      </div>
+    
+      <div class="button-container">
+        <button class="view-children-button" (click)="openModal()">Ver niñors</button>
+
+        <div *ngIf="isModalVisible == true">
+
+          <app-modla-children>
+          </app-modla-children>
+        </div>
+        
+      </div> 
+      
+    </div>
+    
+</div>

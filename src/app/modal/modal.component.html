@@ -1,0 +1,30 @@
+<div *ngIf="!isLoading && municipalities.length > 0">
+    <h3>Selecciona un departamento</h3>
+
+  <input
+    type="text"
+    [(ngModel)]="name"  
+    placeholder="Ingresa el nombre del departamento"
+    (keyup.enter)="loadMunicipality()"
+  />
+  
+  <button (click)="loadMunicipality()">Buscar</button>
+
+  <div *ngIf="municipalities.length > 0">
+    <ul>
+      <li *ngFor="let municipality of municipalities">
+        {{ municipality }}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="foundDepartment">
+    <h4>Departamento encontrado</h4>
+    <p>Nombre: {{ foundDepartment.name }}</p>
+    <p>Municipios: {{ foundDepartment.municipalities }}</p>
+  </div>
+
+  <p *ngIf="departmentNotFound">Departamento no encontrado.</p>
+
+  <button (click)="closeModal()">Cerrar</button>
+</div>

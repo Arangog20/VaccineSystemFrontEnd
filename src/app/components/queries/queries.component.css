@@ -1,0 +1,69 @@
+
+  .onhealth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+  }
+
+  .onhealth-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #041e50;
+  }
+  
+  .highlight {
+    color: #f61b3f;
+  }
+  
+  .sidebar {
+    
+    display: flex;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    
+  }
+  
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+    justify-content: space-evenly;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f61b3f;
+    width: 15%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar a {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+   
+  }
+  
+  
+  .content {   
+    height: 50%;
+    border-radius: 20px; 
+    background-color: #ebecee; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(100% - 250px) !important;
+    overflow: hidden;        /* Habilitar scroll vertical si el contenido excede la altura */
+  }

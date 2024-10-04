@@ -1,0 +1,39 @@
+.start-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 4rem;
+        color:#F61B3F;
+    }
+
+    span {
+        color: #041E50;
+    }
+
+    p{
+       font-family: 'Poppins', sans-serif;
+    }
+
+    button {
+        background-color: #F61B3F; 
+        color: white; 
+        font-weight: bold; 
+        border: none; 
+        border-radius: 25px;
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+        margin-top: 50px;
+        width: 20%;
+        padding: 1rem;
+    }
+    
+    button:hover {
+        background-color: #a30818;
+    }
+}

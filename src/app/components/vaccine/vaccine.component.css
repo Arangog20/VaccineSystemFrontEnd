@@ -1,0 +1,179 @@
+
+.onhealth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+
+   
+  }
+  
+  .container-virus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .form-container{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.5%;
+  }
+  
+  .onhealth-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #041e50;
+    margin: 0;
+    padding: 30px;
+  }
+  
+  .highlight {
+    color: #f61b3f;
+  }
+  
+  .form-group {
+    border: 1px solid #F1F1F1;
+    background-color:#F1F1F1 ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+  
+  }
+  
+  .form-field {
+    display: flex;
+    flex-basis: column;
+    border: 1px solid #F1F1F1;
+    background-color:#F1F1F1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #f61b3f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #740d1e;
+  }
+  
+  .button-id{
+    border-radius: 50%;
+    width: 60%;
+    height: 40%;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .form-container {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1.5rem;
+    }
+  
+    .container-animals {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .onfarm-title {
+      font-size: 2.5rem;
+      padding: 20px;
+    }
+  
+    .form-group {
+      padding: 0.5rem;
+    }
+  
+    .container-animals {
+      gap: 1.5rem;
+    }
+  
+    .form-field {
+      padding: 0.75rem;
+    }
+  
+    input {
+      padding: 0.4rem;
+    }
+  
+    button {
+      padding: 0.4rem;
+      font-size: 1rem;
+    }
+  
+    .button-id {
+      width: 80%;
+      height: 50%;
+      font-size: 1rem;
+      border-radius: 10px;
+    }
+  }
+  
+  @media (min-width: 400px) {
+  
+    .onfarm-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      width: auto;
+    }
+  
+    .container-animals {
+      gap: 1rem;
+    }
+  
+    .form-container {
+      padding: 1rem;
+    }
+  
+    .form-field {
+      padding: 0.5rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 0.3rem;
+    }
+  
+    .button-id {
+      width: 100%;
+      height: auto;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,23 @@
+<div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Lista de niñoss</h5>
+          <button (click)="closeModal()"> X </button> 
+        </div>
+        <div class="modal-body">
+          <div *ngIf="isLoading">Cargando niños...</div>
+          <ul *ngIf="!isLoading && children.length > 0">
+            <li *ngFor="let child of children">
+              <strong>Id:</strong> {{child.id}}<br />
+              <strong>Nombre:</strong> {{child.name }}<br />
+              <strong>Nacimiento:</strong> {{ child.birthday }}<br />
+              <strong>municipality:</strong> {{ child.municipalities.name}}<br />
+              <button (click)="deleteChild(child.id)">Eliminar</button>
+            </li>
+          </ul>
+          <div *ngIf="!isLoading && children.length === 0">No hay niños disponibles.</div>
+        </div>
+      </div>
+    </div>
+  </div>

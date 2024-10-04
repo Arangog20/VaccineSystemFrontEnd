@@ -1,0 +1,152 @@
+.onhealth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    
+    @media (max-width: 768px) {
+      width: 95vw;
+      height: auto;
+      padding: 1rem;
+    }
+  }
+  
+  .onhealth-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #041e50;
+
+  }
+  
+  .highlight {
+    color: #f61b3f;
+  }
+  
+  .containes-department {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+  
+    @media (max-width: 768px) {
+      gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .steps {
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10%;
+    border-radius: 50px;
+    min-width: 50%;
+    max-height: 50%;
+   
+    
+    h4 {
+      color: #f61b3f;
+      font-weight: bold;
+    }
+    
+    ul {
+      color: #041e50;
+      list-style: none;
+      overflow: auto;
+    
+      
+    }
+
+    li{
+      display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+   
+    }
+  }
+  
+  .municipalities-container {
+    background-color: #f61b3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 2rem;
+    padding: 3%;
+    border-radius: 40px;
+    color: white;
+
+    p{
+      width: 70%;
+    }
+
+    button {
+        background-color: #041e50;
+        color: white;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 30%;
+        justify-content: center;
+        height: 50%;
+        
+    
+        &:hover {
+          background-color: #083375;
+        }
+    }
+  
+    @media (max-width: 768px) {
+      gap: 5rem;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    @media (max-width: 480px) {
+      gap: 2rem;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+  .button-container button {
+    background-color: #f61b3f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    
+    @media (max-width: 768px) {
+      width: 80px;
+      height: 80px;
+      font-size: 14px;
+    }
+  
+    @media (max-width: 480px) {
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+    }
+  }
+  
+  .button-container button:hover {
+    background-color: darkred;
+  }

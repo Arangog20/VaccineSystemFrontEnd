@@ -1,0 +1,213 @@
+
+
+.onhealth-container {
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/img/virus1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  
+    margin: 0;
+  
+    h1 {
+      color: #f61b3f;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .onhealth-title {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: #041e50;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+      }
+
+      .highlight {
+        color: #f61b3f;
+        }
+  
+    .form-container {
+        text-align: center;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+  
+      .form-box {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 40%;
+  
+        h2 {
+          color: #d32f2f;
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+  
+        label {
+          display: block;
+          margin-top: 10px;
+          font-size: 0.9rem;
+          color: #333;
+        }
+  
+        input {
+          width: 95%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          margin-right: 20px;
+          font-size: 1rem;
+        }
+  
+        button {
+          background-color: #0d47a1;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #083375;
+          }
+        }
+      }
+    }
+  
+    .button-container {
+      margin-bottom: 20px;
+  
+      .view-animals-button {
+        background-color: #d32f2f;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #b71c1c;
+        }
+      }
+    }
+  
+
+    @media (max-width: 1024px) {
+      .form-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+  
+        .form-box {
+          width: 80%;
+        }
+      }
+  
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .form-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+  
+        .form-box {
+          width: 100%;
+          padding: 15px;
+        }
+  
+        input {
+          width: 100%;
+          margin-right: 0;
+        }
+  
+        button {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+        }
+      }
+  
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+  
+        .view-animals-button {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+          border-radius: 5px;
+        }
+      }
+  
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .form-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 5px;
+  
+        .form-box {
+          width: 100%;
+          padding: 10px;
+        }
+  
+        input {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+  
+        button {
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+  
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+  
+        .view-animals-button {
+          width: 100%;
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+  
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    
+  }

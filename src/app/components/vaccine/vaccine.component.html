@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="onhealth-container">
+        <p class="onhealth-title"><span class="highlight">ON</span>HEALTH</p>
+
+        <div class="container-virus">
+          <img src="/assets/img/virus3.png" alt="virus">
+          <button class="button-id" > Ver Vacunas</button>
+          <div>
+          </div>
+
+          <img src="/assets/img/virus4.png" alt="virus">
+        </div>
+    
+        <div class="form-container">
+          <div class="form-group">
+            <h2>Crear Vacuna</h2>
+
+            <form  (ngSubmit)="sendDataVaccine()">
+              <div class="form-field">
+                <label for="name">Nombre de vacuna:</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name"
+                  [(ngModel)]="name"
+                  placeholder="Vacuna1" 
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="minAge">Edad minima:</label>
+                <input 
+                  type="number" 
+                  id="minAge"
+                  name="minAgen" 
+                  [(ngModel)]="minAge"
+                  placeholder="Capacidad" 
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="maxAge">Edad maxima:</label>
+                <input 
+                  type="number" 
+                  id="maxAge"
+                  name="maxAge" 
+                  [(ngModel)]="maxAge"
+                  placeholder="Capacidad" 
+                  required
+                />
+              </div>
+              <button type="submit">Crear Vacuna</button>
+            </form>
+          </div>
+    
+          <div class="form-group">
+            <h2>Agregar vacuna al niño</h2>
+            <form>
+              <div class="form-field">
+                <label for="corral-id">Nombre de vacuna:</label>
+                <input 
+                  type="text" 
+                  id="vaccineName" 
+                  name="vaccineName"
+                   
+                  placeholder="Vacuna1" 
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="chil-id">ID de niño:</label>
+                <input 
+                  type="text" 
+                  id="childId" 
+                  name="childId"
+                 
+                  placeholder="Niño Id" 
+                  required
+                />
+              </div>
+              <button type="submit">Agregar Vacuna</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+

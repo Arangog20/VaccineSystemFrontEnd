@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="onhealth-container">
+    <p class="onhealth-title"><span class="highlight">ON</span>HEALTH</p>
+    <div class="containes-department">
+      <div class="steps">
+        <h4>Departamentos</h4>
+        <ul *ngIf="!isLoading && departments.length > 0">
+          <li *ngFor="let department of departments">
+            {{ department.name }}
+          </li>
+        </ul>
+      </div>
+
+      <div *ngIf="isModalVisible == true">
+        <app-modal></app-modal>
+      </div>
+
+      <div class="virus-container">
+        <img src="/assets/img/virus2.png" alt="virus2" />
+      </div>
+    </div>
+
+    <div class="municipalities-container">
+      <p>Consulta el listado de niños vacunados por municipio y mantente al día con la cobertura de vacunación en tu comunidad. Accede a la información actualizada y contribuye a proteger la salud de los más pequeños en tu municipio</p>
+      <input
+      type="text"
+      [(ngModel)]="name" 
+      placeholder="Ingresa el nombre del departamento"
+    />
+      <button (click)="openModal()">Consultar</button>
+    </div>
+  </div>
+</div>
